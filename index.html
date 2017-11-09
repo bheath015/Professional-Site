@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Brian Heath</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $('ul.nav').find('a').click(function(){
+      var $href = $(this).attr('href');
+      var $anchor = $('#'+$href).offset();
+      window.scrollTo($anchor.left,$anchor.top);
+      return false;
+      });
+    </script>
+
+    <!-- Stuff for the gallery-->
+
+</head>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<style>
+div.gallery {
+    border: 3px solid #ccc;
+    align-items: center;
+}
+
+div.gallery:hover {
+    border: 3px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    width: 24.99999%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brian Heath</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#About">About</a></li>
+            <li><a href="#section2">Projects</a></li>
+            <li><a href="#section3">Initiatives</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#section4">Gallery</a></li>
+            <li class="active"><a href="#section5">Contact<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div id="About">
+      <div class="who">
+        <div class="containerhomepage">
+          <div class="myphoto">
+            <img src="images/brian2.png" height="175" width="175">
+          </div>
+          <br>
+          <button class="btn btn-default" onclick="location.href='http://linkedin.com/in/brian-heath-015';"">
+            <img src="icons/linkedin.png" max-height="50" width="50">
+          </button>
+          <button class="btn btn-default" onclick="location.href='https://github.com/bheath015';"">
+            <img src="icons/github.png" max-height="50" width="50">
+          </button>
+          <button class="btn btn-default" onclick="location.href='https://upenn.joinhandshake.com/users/8073456';"">
+            <img src="icons/handshake.png" max-height="50" width="50">
+          </button>
+          <br>
+        </div>
+        <div class="comic">
+          <img src="images/python.png" height=350 width=350>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+     <div id="section2">
+      <div class="section2" style="background-color: lightgray;">
+        <div class="jumbotron" style="background-color: lightgray">
+          <div class="container">
+            <h1>Project Experience</h1>
+            <p>Over the past seven years, I have worked with languages including Java, VBA, SQL, and Python. Some highlights from my experience are below, but please check out my Github for a more complete list of finished projects.</p>
+          </div>
+        </div>
+
+        <div class="container" style="background-color: lightgray">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Philadelphia Bike Share Analysis</h2>
+              <p>Indego is Philadelphia's bike share program that has 500 bikes across 60 locations, and provides convenient transportation for residents of the city. On GitHub link below, you will find a Java program that analyzes Indego's open source data. Please click <a href="https://www.rideindego.com/about/data/"> here </a> for the documents you will need to run the program.</p>
+              <p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/CryptoCurrency_Trading_Strategy';"" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>CryptoCurrency Trading Opportunities</h2>
+              <p>A friend and I are currently working on developing cryptocurrency trading strategies using the quantiacs platform based on historic data, similar to traditional technical analysis applied to futures markets. I am building out a couple necessary python crawlers now, and you can see the progress linked below.</p>
+              <p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/CryptoCurrency_Trading_Strategy';"" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Optimized Blackjack Strategy</h2>
+              <p>Using a Monte Carlo simulation, I attempted to develop a winning betting strategy for blackjack. This is a multi-class program and very scalable. Try it out in the casinos and let me know if my projections play out!</p>
+              <p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/BlackJack';"" role="button">View details &raquo;</a></p>
+           </div>
+          </div>
+          <div class="row">
+           <div class="col-md-6">
+             <h2>Planning Nightly Move Operations</h2>
+              <p>At McMaster-Carr, I used IBM Mainframe and ISPF to develop a SQL/VBA database for 600,000 items to optimize nightly operational capacity during an internal warehouse inventory relocation. Leveraging the database, we reduced the move from 16 to 14 weeks and saved $35,000. I cannot provide a link to this as it contained  company data. Instead, you will find a link to puppies.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.google.com/search?q=puppy+pictures&safe=off&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiq3p7knbLXAhUHTCYKHUNaAn8Q_AUICigB&biw=1240&bih=710';"" role="button">View puppies &raquo;</a></p>
+           </div>
+           <div class="col-md-6">
+            <h2>This Website!</h2>
+              <p>I had a lot of fun making this website using HTML, CSS, and Javascript, and I would be happy to help anyone get started making their personal site. Please feel free to check out my code and ask questions! Also, if you see any ways that I can improve the site, please let me know!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/BlackJack';"" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>   
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+     <div id="section3"> 
+      <div class="section3">
+        <div style="background-color: #F0F8FF" class="jumbotron">
+          <div class="container">
+            <h1>Supported Initiatives</h1>
+            <p>If you have the opportunity, please take some time to check out the awesome work of some of the organizations below! Each organization supports a unique cause that means a great deal to their local communities.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+              <h2>BBBS of Mercer County</h2>
+              <p>My participation with Big Brothers Big Sisters programs provided me with some of the most rewarding experiences of my life. Most recently I worked as a Big Brother in Mercer County. BBBS Mercer provides opportunities for kids from diverse backgrounds in need of a role model, and they have countless success stories. Please take some time to review their recent initiatives.</p>
+              <p><a class="btn btn-info" href="#" onclick="location.href='http://bbbsmercer.org/';"" role="button">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Minds Matter Philadelphia</h2>
+              <p>Many children in urban public scools crave exposure to Science, Technology, Engineering, and Mathematic academic opportunities, but often don't know where to channel their enthusiasm. Minds Matter aims to change that for teenage students in Philadelphia through mentorship and eduction.</p>
+              <p><a class="btn btn-info" href="#" onclick="location.href='http://mindsmatterphilly.com/';"" role="button">Learn More &raquo;</a></p>
+           </div>
+            <div class="col-md-4">
+              <h2>Operation Jersey Cares</h2>
+              <p>During our field missions in Korea, my company was often away from our base for weeks at a time. The generous people at Operation Jersey Cares sent multiple care packages to our unit during my two years overseas that provided many essential items and a little bit of home. This great organization supports deployed troops around the world and I was fortunate to see the impact of their mission first hand.  </p>
+              <p><a class="btn btn-info" href="#" onclick="location.href='http://operationjerseycares.org/';"" role="button">Learn More &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <div id="section4">  
+      <div class="section4">
+          <div style="background-color: #E6FFB3" class="jumbotron">
+            <div class="container">
+              <h1>Gallery</h1>
+              <p>Here are some fun memories that might help you get to know me a little better!</p>
+            </div>
+          </div>
+        <div class="container" style="vertical-align: middle;">
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/MPColor.JPG">
+                <img src="images/gallery/MPColor.JPG" alt="Machu Picchu" width="600" height="400">
+              </a>
+              <div class="desc">This is one of my favorite pictures from Machu Picchu. The last time I went I did not hike the Inca trail, but that is now on the bucket list.</div>
+            </div>
+          </div>
+
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/HangLoose.JPG">
+                <img src="images/gallery/HangLoose.JPG" alt="Skydiving Cross Keys" width="600" height="400">
+              </a>
+              <div class="desc">Celebrating a great jump with some great friends.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/Reenlistment.JPG">
+                <img src="images/gallery/Reenlistment.JPG" alt="Reenlistment Ceremony" width="600" height="400">
+              </a>
+              <div class="desc">Some of my favorite memories in the Army were conducting ceremonies with members of my team.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/hockeyteam.JPG">
+                <img src="images/gallery/hockeyteam.JPG" alt="Duke Hockey" width="600" height="400">
+              </a>
+              <div class="desc">I was very fortunate to spend three years playing hockey at Duke. Now I play in a league of washed up college athletes like myself.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/Nice.JPG">
+                <img src="images/gallery/Nice.JPG" alt="Nice Landscape" width="600" height="400">
+              </a>
+              <div class="desc">The outskirts of Nice have some really gorgeous mountain landsapes!</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/Cartagena.JPG">
+                <img src="images/gallery/Cartagena.JPG" alt="Cartagena Street" width="600" height="400">
+              </a>
+              <div class="desc">Cartagena is the most colorful town I've been to. </div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/OPORD.JPG">
+                <img src="images/gallery/OPORD.JPG" alt="OPORD" width="600" height="400">
+              </a>
+              <div class="desc">Getting the helicoptor's network company ready for a mission in Korea. We all had about four layers on in this picture.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/Fuji.JPG">
+                <img src="images/gallery/Fuji.JPG" alt="Mount Fuji" width="600" height="400">
+              </a>
+              <div class="desc">This was my best friend and I enjoying a snack as we tried to climb Mount Fuji in the offseason. We did not succeed.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/Bali.JPG">
+                <img src="images/gallery/Bali.JPG" alt="Bali" width="600" height="400">
+              </a>
+              <div class="desc">I visited a stunning Buddhist temple during a surf trip to Bali. Monkeys live in many Balinese temples and steal sunglasses from visitors.</div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="gallery_close" style="padding:6px;">
+            <p>If you would like to learn more about these destinations or activities, please reach out to me! I love trading ideas for a new adventure!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="section5">
+      <div class="section5">
+          <div style="background-color: #EAB9F6" class="jumbotron">
+            <div class="container">
+              <h1>Contact Information</h1>
+              <p style="font-style: italic;">Please feel free to contact me by phone, email, or old-fashioned mail!</p>
+            </div>
+          </div>
+          <div>
+            <h3>
+              Phone: (803) 667 - 0112
+            </h3>
+            <h3>
+              Email: bheath015@gmail.com
+            </h3>
+            <h3>
+              Address: 241 S 49th Street, Philadelphia PA, 19139
+            </h3>
+          </div>
+      </div> <!-- /container -->
+    </div>  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
