@@ -1,0 +1,100 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-bottom: 0px;
+}
+
+.section2, .section3, .section4, .section5 {
+	text-align: center;
+	vertical-align: center !important;
+}
+
+.section2 {
+	background-color: 
+}
+
+.section3 {
+	background-color: #F0F8FF;
+}
+
+.section4 {
+	background-color: #e6ffb3;
+}
+
+.section5 {
+	background-color: #EAB9F6;
+	padding-bottom: 20px;
+}
+
+.jumbotron p {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+}
+
+.btn-lg {
+	font-size: 36px;
+}
+
+.who {
+	text-align: center;
+	background-image: url('../images/MP.jpg');
+	background-size: cover;
+	color: black;	
+}
+
+.who img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.myphoto img {
+	margin-top: 70px;
+}
+
+.who button {
+	padding: 0;
+	border: none;
+	background: none;
+	padding: 30px;
+	background: transparent;
+	outline: none;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn {
+	margin: 15px;
+}
+
+.comic img {
+	margin-bottom: 30px;
+}
+
+
+.navbar, .nav, .navbar-default a {
+	margin-bottom: 0px;
+	color: black !important;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14pt;
+}
+
+.navbar-brand, .navbar-collapse, ul.dropdown-menu {
+	color: black !important;
+	font-size: 18pt !important;
+}
+
+.navbar-default {
+	background-color: rgb(135, 135, 135);
+}
+
+.gallery_close {
+	font-size: 16px;
+}
+
+.col-md-4 {
+	display:inline-block;
+}
