@@ -87,6 +87,10 @@ body {
 	font-size: 18pt !important;
 }
 
+.dropdown-menu {
+    width: 300px !important;
+}
+
 .navbar-default {
 	background-color: rgb(135, 135, 135);
 }

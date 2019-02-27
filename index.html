@@ -23,6 +23,8 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -139,13 +141,20 @@ div.desc {
           <button class="btn btn-default" onclick="location.href='https://github.com/bheath015';"">
             <img src="icons/github.png" max-height="50" width="50">
           </button>
-          <button class="btn btn-default" onclick="location.href='https://upenn.joinhandshake.com/users/8073456';"">
-            <img src="icons/handshake.png" max-height="50" width="50">
+          <br>
+          <button class="btn btn-default" onclick="location.href='https://www.delbarton.org/';"">
+            <img src="icons/delbarton.png" max-height="50" width="50">
+          </button>
+          <button class="btn btn-default" onclick="location.href='https://www.duke.edu/';"">
+            <img src="icons/duke.png" max-height="50" width="50">
+          </button>
+          <button class="btn btn-default" onclick="location.href='https://www.upenn.edu/';"">
+            <img src="icons/penn.png" max-height="50" width="50">
           </button>
           <br>
         </div>
         <div class="comic">
-          <img src="images/python.png" height=350 width=350>
+          <!-- <img src="images/python.png" height=350 width=350> -->
         </div>
       </div>
     </div>
@@ -156,37 +165,54 @@ div.desc {
         <div class="jumbotron" style="background-color: lightgray">
           <div class="container">
             <h1>Project Experience</h1>
-            <p>Over the past seven years, I have worked with languages including Java, VBA, SQL, and Python. Some highlights from my experience are below, but please check out my Github for a more complete list of finished projects.</p>
+            <p>Over the past seven years, I have worked with languages including Python, Spark, Java, SQL, and C/C++. Some highlights from my experience are below, but please check out my Github for a more complete list of finished projects.</p>
           </div>
         </div>
 
         <div class="container" style="background-color: lightgray">
           <!-- Example row of columns -->
           <div class="row">
-            <div class="col-md-4">
-              <h2>Philadelphia Bike Share Analysis</h2>
-              <p>Indego is Philadelphia's bike share program that has 500 bikes across 60 locations, and provides convenient transportation for residents of the city. On GitHub link below, you will find a Java program that analyzes Indego's open source data. Please click <a href="https://www.rideindego.com/about/data/"> here </a> for the documents you will need to run the program.</p>
-              <p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Philly-Bike-Share-Analysis';"" role="button">View details &raquo;</a></p>
+            <div class="col-md-6">
+              <h2>PolyDroid</h2>
+              <p>Inspired by Google's Building for Billions, an initiative to make mobile appls more accessible to diverse audiences, I am completing a thesis at the University of Pennsylvania proposing a system that uses a probabalistic learning model and active learning to optimize mobile apps for both user experience and resource consumption. Alongside <a href="https://www.linkedin.com/in/neelay-velingker-82745a14b">Neelay Velingker</a>, <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a>, and <a href="https://obastani.github.io/">Professor Osbert Bastani</a>, we recently submitted this work to FSE/ESEC 2019! I have never had a more rewarding academic experience, and I owe that all to our amazing team.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://arxiv.org/abs/1902.09589';"" role="button">PolyDroid &raquo;</a>
+            </p>
             </div>
-            <div class="col-md-4">
-              <h2>CryptoCurrency Trading Opportunities</h2>
-              <p>A friend and I are currently working on developing cryptocurrency trading strategies using the quantiacs platform based on historic data, similar to traditional technical analysis applied to futures markets. I am building out a couple necessary python crawlers now, and you can see the progress linked below.</p>
-              <p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/CryptoCurrency_Trading_Strategy';"" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-              <h2>Optimized Blackjack Strategy</h2>
-              <p>Using a Monte Carlo simulation, I attempted to develop a winning betting strategy for blackjack. This is a multi-class program and very scalable. Try it out in the casinos and let me know if my projections play out!</p>
-              <p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/BlackJack';"" role="button">View details &raquo;</a></p>
+           <div class="col-md-6">
+             <h2>Implementing a Data Pipeline</h2>
+              <p>When I arrived at Accolade as a data engineer, the company was transitioning to a new enterprise data warehouse on AWS. I implemented a scalable pipeline which could collect unstructured data from microservices using SNS/SQS, transform data using Spark on EMR, and upsert the data to the warehouse in Redshift. It was a great opportunity to learn at a fun and energetic company. It meant a lot working on a team that faces the challenges of healthcare head-on and tries to make the industry a more compassionate and economical place. Learn more about them at the link below!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.accolade.com/';"" role="button">Accolade &raquo;</a></p>
            </div>
           </div>
           <div class="row">
+            <div class="col-md-6">
+              <h2>Program Reduction</h2>
+              <p>Before PolyDroid, I worked with a tremendous team at the University of Pennsylvania under the guidance of <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a> that focuses on debloating large programs. Last summer, I researched the application of the team's Chisel program on web apps (specifically on the impact of non-determinism related to programs that interact with a server). You can read more about Chisel through the link below.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='http://www.cis.upenn.edu/~mhnaik/papers/chisel.pdf';"" role="button">Chisel &raquo;</a>
+            </p>
+            </div>
            <div class="col-md-6">
              <h2>Planning Nightly Move Operations</h2>
               <p>At McMaster-Carr, I used IBM Mainframe and ISPF to develop a SQL/VBA database for 600,000 items to optimize nightly operational capacity during an internal warehouse inventory relocation. Leveraging the database, we reduced the move from 16 to 14 weeks and saved $35,000. I cannot provide a link to this as it contained  company data. Instead, you will find a link to puppies.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.google.com/search?q=puppy+pictures&safe=off&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiq3p7knbLXAhUHTCYKHUNaAn8Q_AUICigB&biw=1240&bih=710';"" role="button">View puppies &raquo;</a></p>
            </div>
-           <div class="col-md-6">
-            <h2>This Website!</h2>
-              <p>I had a lot of fun making this website using HTML, CSS, and Javascript, and I would be happy to help anyone get started making their personal site. Please feel free to check out my code and ask questions! Also, if you see any ways that I can improve the site, please let me know!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Professional-Site';"" role="button">View details &raquo;</a></p>
+          </div>
+            <div class="col-md-4">
+              <h3>CryptoCurrency Trading</h3>
+              <p>A friend and I are currently working on developing a platform to help users experiment with applying machine learning models to the cryptocurrency market. We hope to familiarize this exciting marketplace with a larger audience!</p>
+              <p>
+                <a class="btn btn-success" href="#" onclick="location.href='https://github.com/halljw/QuantitativeCryptocurrency';"" role="button">View code &raquo;</a>
+                <img src="images/emblem_dark.png" style="width: 30px;">
+                <a class="btn btn-success" href="#" onclick="location.href='http://www.blockheadexchange.com';"" role="button" style="background-color: blue; border-color: blue;">View website &raquo;</a>
+              </p>
+            </div>
+           <div class="col-md-4">
+              <h3>UPenn Course Recommender</h3>
+              <p>During the 2018 Winter Edition of PennApps, University of Pennsylvania's hackathon, I worked with two students to develop a program that recommends electives based on course reviews. We leveraged Scikit-Learn and Bootstrap to put it all together.</p>
+              <p>
+                <a class="btn btn-success" href="#" onclick="location.href='https://github.com/kaushik316/OfCourse';"" role="button">View code &raquo;</a>
+                <a class="btn btn-success" href="#" onclick="location.href='https://penn-ofcourse.herokuapp.com/';"" role="button" style="background-color: blue; border-color: blue;">View website &raquo;</a>
+              </p>
+           </div>
+          <div class="col-md-4">
+            <h3>This Colorful Website!</h3>
+              <p>I had a lot of fun making this website, and I would be happy to help anyone get started making their personal site. Please ask questions, and if you see any ways that I can improve the site, let me know!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Professional-Site';"" role="button">View code &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -236,8 +262,8 @@ div.desc {
         <div class="container" style="vertical-align: middle;">
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/MPColor.JPG">
-                <img src="images/gallery/MPColor.JPG" alt="Machu Picchu" width="600" height="400">
+              <a target="_blank" href="images/gallery2/MPColor.jpg">
+                <img src="images/gallery2/MPColor.jpg" alt="Machu Picchu" width="600" height="400">
               </a>
               <div class="desc">This is one of my favorite pictures from Machu Picchu. The last time I went I did not hike the Inca trail, but that is now on the bucket list.</div>
             </div>
@@ -246,8 +272,8 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/HangLoose.JPG">
-                <img src="images/gallery/HangLoose.JPG" alt="Skydiving Cross Keys" width="600" height="400">
+              <a target="_blank" href="images/gallery2/AllSmiles.jpg">
+                <img src="images/gallery2/AllSmiles.jpg" alt="Skydiving Cross Keys" width="600" height="400">
               </a>
               <div class="desc">Celebrating a great jump with some great friends.</div>
             </div>
@@ -264,8 +290,8 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/hockeyteam.JPG">
-                <img src="images/gallery/hockeyteam.JPG" alt="Duke Hockey" width="600" height="400">
+              <a target="_blank" href="images/gallery2/hockeyteam.jpg">
+                <img src="images/gallery2/hockeyteam.jpg" alt="Duke Hockey" width="600" height="400">
               </a>
               <div class="desc">I was very fortunate to spend three years playing hockey at Duke. Now I play in a league of washed up college athletes like myself.</div>
             </div>
@@ -273,8 +299,8 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/Nice.JPG">
-                <img src="images/gallery/Nice.JPG" alt="Nice Landscape" width="600" height="400">
+              <a target="_blank" href="images/gallery2/Nice.jpg">
+                <img src="images/gallery2/Nice.jpg" alt="Nice Landscape" width="600" height="400">
               </a>
               <div class="desc">The outskirts of Nice have some really gorgeous mountain landsapes!</div>
             </div>
@@ -282,8 +308,8 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/Cartagena.JPG">
-                <img src="images/gallery/Cartagena.JPG" alt="Cartagena Street" width="600" height="400">
+              <a target="_blank" href="images/gallery2/Cartagena.jpg">
+                <img src="images/gallery2/Cartagena.jpg" alt="Cartagena Street" width="600" height="400">
               </a>
               <div class="desc">Cartagena is the most colorful town I've been to. </div>
             </div>
@@ -291,8 +317,8 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/OPORD.JPG">
-                <img src="images/gallery/OPORD.JPG" alt="OPORD" width="600" height="400">
+              <a target="_blank" href="images/gallery2/OPORD.jpg">
+                <img src="images/gallery2/OPORD.jpg" alt="OPORD" width="600" height="400">
               </a>
               <div class="desc">Getting the helicoptor's network company ready for a mission in Korea. We all had about four layers on in this picture.</div>
             </div>
@@ -300,17 +326,17 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/Fuji.JPG">
-                <img src="images/gallery/Fuji.JPG" alt="Mount Fuji" width="600" height="400">
+              <a target="_blank" href="images/gallery2/Fuji.jpg">
+                <img src="images/gallery2/Fuji.jpg" alt="Mount Fuji" width="600" height="400">
               </a>
-              <div class="desc">This was my best friend and I enjoying a snack as we tried to climb Mount Fuji in the offseason. We did not succeed.</div>
+              <div class="desc">This was my great friend and I enjoying a snack as we tried to climb Mount Fuji in the offseason. We did not succeed.</div>
             </div>
           </div>
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/Bali.JPG">
-                <img src="images/gallery/Bali.JPG" alt="Bali" width="600" height="400">
+              <a target="_blank" href="images/gallery2/Bali.jpg">
+                <img src="images/gallery2/Bali.jpg" alt="Bali" width="600" height="400">
               </a>
               <div class="desc">I visited a stunning Buddhist temple during a surf trip to Bali. Monkeys live in many Balinese temples and steal sunglasses from visitors.</div>
             </div>
@@ -320,6 +346,7 @@ div.desc {
 
           <div class="gallery_close" style="padding:6px;">
             <p>If you would like to learn more about these destinations or activities, please reach out to me! I love trading ideas for a new adventure!</p>
+            <p>Photo editing by the very talented Marie Simonova. Check out her amazing work <a href="https://www.instagram.com/simonova_photo/?hl=en"> here!</a></p>
           </div>
         </div>
       </div>
