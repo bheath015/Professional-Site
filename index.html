@@ -141,14 +141,20 @@ div.desc {
           <button class="btn btn-default" onclick="location.href='https://github.com/bheath015';"">
             <img src="icons/github.png" max-height="50" width="50">
           </button>
+          <button class="btn btn-default" onclick="location.href='https://www.tortugaagtech.com/who-we-are';"">
+            <img src="icons/tortuga.png" max-height="50" width="50">
+          </button>
+          <button class="btn btn-default" onclick="location.href='resume.pdf';"">
+            <img src="icons/resume.png" max-height="50" width="50">
+          </button>
           <br>
           <button class="btn btn-default" onclick="location.href='https://www.delbarton.org/';"">
             <img src="icons/delbarton.png" max-height="50" width="50">
           </button>
-          <button class="btn btn-default" onclick="location.href='https://www.duke.edu/';"">
+          <button class="btn btn-default" onclick="location.href='https://econ.duke.edu/';"">
             <img src="icons/duke.png" max-height="50" width="50">
           </button>
-          <button class="btn btn-default" onclick="location.href='https://www.upenn.edu/';"">
+          <button class="btn btn-default" onclick="location.href='https://www.seas.upenn.edu/';"">
             <img src="icons/penn.png" max-height="50" width="50">
           </button>
           <br>
@@ -165,7 +171,7 @@ div.desc {
         <div class="jumbotron" style="background-color: lightgray">
           <div class="container">
             <h1>Project Experience</h1>
-            <p>Over the past seven years, I have worked with languages including Python, Spark, Java, SQL, and C/C++. Some highlights from my experience are below, but please check out my Github for a more complete list of finished projects.</p>
+            <p>I am the Director of Data and Machine Learning at a cool company called <a href="https://www.tortugaagtech.com/">Tortuga</a>, where we develop technology to help make agriculture more sustainable. Over the past sixteen years, I have helped companies bring artificial intelligence from prototype to the edge, and built collaborative and happy teams along the way. Please reach out if you'd like to chat!</p>
           </div>
         </div>
 
@@ -174,45 +180,52 @@ div.desc {
           <div class="row">
             <div class="col-md-6">
               <h2>PolyDroid</h2>
-              <p>Inspired by Google's Building for Billions, an initiative to make mobile appls more accessible to diverse audiences, I am completing a thesis at the University of Pennsylvania proposing a system that uses a probabalistic learning model and active learning to optimize mobile apps for both user experience and resource consumption. Alongside <a href="https://www.linkedin.com/in/neelay-velingker-82745a14b">Neelay Velingker</a>, <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a>, and <a href="https://obastani.github.io/">Professor Osbert Bastani</a>, we recently submitted this work to FSE/ESEC 2019! I have never had a more rewarding academic experience, and I owe that all to our amazing team.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://arxiv.org/abs/1902.09589';"" role="button">PolyDroid &raquo;</a>
-            </p>
+              <p>Inspired by Google's Building for Billions, an initiative to make mobile appls more accessible to diverse audiences, I am completed a thesis at the University of Pennsylvania proposing a system that uses a probabalistic learning model and active learning to optimize mobile apps for both user experience and resource consumption. Alongside <a href="https://www.linkedin.com/in/neelay-velingker-82745a14b">Neelay Velingker</a>, <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a>, and <a href="https://obastani.github.io/">Professor Osbert Bastani</a>, we developed an effective model for understanding mobile interfaces. I have never had a more rewarding academic experience, and I owe that all to our amazing team. <br><b>Update!</b> I recently found out that I was awarded the 2019 University of Pennsylvania Oustanding Graduate Research Award for PolyDroid! Thank you for your support!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://arxiv.org/abs/1902.09589';"" role="button">PolyDroid &raquo;</a>
             </div>
-           <div class="col-md-6">
-             <h2>Implementing a Data Pipeline</h2>
-              <p>When I arrived at Accolade as a data engineer, the company was transitioning to a new enterprise data warehouse on AWS. I implemented a scalable pipeline which could collect unstructured data from microservices using SNS/SQS, transform data using Spark on EMR, and upsert the data to the warehouse in Redshift. It was a great opportunity to learn at a fun and energetic company. It meant a lot working on a team that faces the challenges of healthcare head-on and tries to make the industry a more compassionate and economical place. Learn more about them at the link below!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.accolade.com/';"" role="button">Accolade &raquo;</a></p>
-           </div>
+            <div class="col-md-6">
+               <h2>Automated Deep Learning for Robotics</h2>
+                <p>I was fortunate to have been given a tremendous opportunity at Tortuga to manage the entire off-robot data stack, including ingestion, engineering, and machine learning. As the subject matter expert in those spaces, I designed an end-to-end microservices backend architecture that generates, validates, and evaluates deep learning models. By leveraging cloud and open source technologies, we have been able to quickly improve the robustness and learning capacity of our models without sacrificing embedded system performance. I am so happy to work with such an amazing group that has given me a great deal of latitude to explore the intersection of CV and agricultural robotics. Below are links to the classes that got me started.</p>
+                <p>
+                  <a class="btn btn-success" href="#" onclick="location.href='http://cs231n.stanford.edu/';"" role="button">Stanford CS231n &raquo;</a>
+                  <img src="icons/tortuga.png" style="width: 30px;">
+                  <a class="btn btn-success" href="#" onclick="location.href='https://alliance.seas.upenn.edu/~cis581/wiki/index.php?title=Lectures';"" role="button" style="background-color: blue; border-color: blue;">Penn CS581 &raquo;</a>
+                </p>
+            </div>
           </div>
           <div class="row">
             <div class="col-md-6">
+              <h2>Cell Protein Classification</h2>
+              <p>In 2018-19 when I was heavily researching classical vision and deep learning theory under the incredible mentorship of <a href="https://www.cis.upenn.edu/~jshi/">Professor Jianbo Shi</a>, my friend <a href="https://www.linkedin.com/in/peymannorouzi/">Peyman Norouzi</a> and I tried to find a vision problem that had immediate tangible value. We found the <a href="https://www.kaggle.com/c/human-protein-atlas-image-classification/">Human Protein Atlas Image Classification</a> Kaggle competition, which asked researchers to classify 27 proteins in thousands of images of cells. This problem required a lot of creativity on our end, from writing a custom network, to implementing focal loss, to devising fast original segmentation techniques. I have presented our work in multiple settings over the past year, so to learn more about this work check out my presentation slides below. Or you can view the  network itself on Google Colab.</p>
+              <p>
+              <a class="btn btn-success" href="#" onclick="location.href='https://docs.google.com/presentation/d/18u3nAZde4l6aZ-Ibdr81rUK-tHp3zI4wQQg5bpjlJa8/edit?usp=sharing';"" role="button">Presentation &raquo;</a>
+              <img src="icons/micro.png" style="width: 30px;">
+              <a class="btn btn-success" href="#" onclick="location.href='https://colab.research.google.com/drive/15dq9ALJjXS8gpBbhjymmR0kg_HKiqI-l';"" role="button" style="background-color: blue; border-color: blue;">View Code &raquo;</a>
+              </p>
+            </div>
+            <div class="col-md-6">
+             <h2>Implementing a Data Pipeline</h2>
+              <p>When I arrived at Accolade as a data engineer, the company was transitioning to a new enterprise data warehouse on AWS. Under the guidance of <a href="https://www.linkedin.com/in/matthew-wurst-51063739/">Matt Wurst</a>, the best software manager I have ever worked for, I implemented a scalable pipeline which could collect unstructured data from microservices using SNS/SQS, transform data using Spark on EMR, and upsert the data to the warehouse in Redshift. It was a great opportunity to learn at a fun and energetic company. It meant a lot working on a team that faces the challenges of healthcare head-on and tries to make the industry a more compassionate and economical place. Learn more about them at the link below!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.accolade.com/';"" role="button">Accolade &raquo;</a></p>
+            </div>
+          </div>
+          <div class="row"></div>
+            <div class="col-md-4">
               <h2>Program Reduction</h2>
-              <p>Before PolyDroid, I worked with a tremendous team at the University of Pennsylvania under the guidance of <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a> that focuses on debloating large programs. Last summer, I researched the application of the team's Chisel program on web apps (specifically on the impact of non-determinism related to programs that interact with a server). You can read more about Chisel through the link below.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='http://www.cis.upenn.edu/~mhnaik/papers/chisel.pdf';"" role="button">Chisel &raquo;</a>
+              <p>Before PolyDroid, I worked with a tremendous team under the guidance of <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a> that focuses on debloating large programs. I researched the application of the team's Chisel program on web apps (specifically on the impact of non-determinism related to programs that interact with a server). You can read more about Chisel through the link below.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='http://www.cis.upenn.edu/~mhnaik/papers/chisel.pdf';"" role="button">Chisel &raquo;</a>
             </p>
             </div>
-           <div class="col-md-6">
-             <h2>Planning Nightly Move Operations</h2>
-              <p>At McMaster-Carr, I used IBM Mainframe and ISPF to develop a SQL/VBA database for 600,000 items to optimize nightly operational capacity during an internal warehouse inventory relocation. Leveraging the database, we reduced the move from 16 to 14 weeks and saved $35,000. I cannot provide a link to this as it contained  company data. Instead, you will find a link to puppies.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.google.com/search?q=puppy+pictures&safe=off&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiq3p7knbLXAhUHTCYKHUNaAn8Q_AUICigB&biw=1240&bih=710';"" role="button">View puppies &raquo;</a></p>
-           </div>
-          </div>
             <div class="col-md-4">
               <h3>CryptoCurrency Trading</h3>
-              <p>A friend and I are currently working on developing a platform to help users experiment with applying machine learning models to the cryptocurrency market. We hope to familiarize this exciting marketplace with a larger audience!</p>
+              <p>A friend and I developed a platform to help users experiment with applying machine learning models to the cryptocurrency market. We hope to familiarize this exciting marketplace with a larger audience!</p>
               <p>
-                <a class="btn btn-success" href="#" onclick="location.href='https://github.com/halljw/QuantitativeCryptocurrency';"" role="button">View code &raquo;</a>
+                <a class="btn btn-success" href="#" onclick="location.href='https://github.com/halljw/QuantitativeCryptocurrency';"" role="button">View Code &raquo;</a>
                 <img src="images/emblem_dark.png" style="width: 30px;">
-                <a class="btn btn-success" href="#" onclick="location.href='http://www.blockheadexchange.com';"" role="button" style="background-color: blue; border-color: blue;">View website &raquo;</a>
+                <a class="btn btn-success" href="#" onclick="location.href='http://www.blockheadexchange.com';"" role="button" style="background-color: blue; border-color: blue;">View Website &raquo;</a>
               </p>
             </div>
-           <div class="col-md-4">
-              <h3>UPenn Course Recommender</h3>
-              <p>During the 2018 Winter Edition of PennApps, University of Pennsylvania's hackathon, I worked with two students to develop a program that recommends electives based on course reviews. We leveraged Scikit-Learn and Bootstrap to put it all together.</p>
-              <p>
-                <a class="btn btn-success" href="#" onclick="location.href='https://github.com/kaushik316/OfCourse';"" role="button">View code &raquo;</a>
-                <a class="btn btn-success" href="#" onclick="location.href='https://penn-ofcourse.herokuapp.com/';"" role="button" style="background-color: blue; border-color: blue;">View website &raquo;</a>
-              </p>
-           </div>
-          <div class="col-md-4">
-            <h3>This Colorful Website!</h3>
-              <p>I had a lot of fun making this website, and I would be happy to help anyone get started making their personal site. Please ask questions, and if you see any ways that I can improve the site, let me know!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Professional-Site';"" role="button">View code &raquo;</a></p>
+            <div class="col-md-4">
+              <h3>This Colorful Website!</h3>
+                <p>I had a lot of fun making this website, and I would be happy to help anyone get started making their personal site. Feel free to email me any questions you might have. Also, let me know if you see any ways that I can improve the site, I update it all the time.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Professional-Site';"" role="button">View Code &raquo;</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -357,7 +370,7 @@ div.desc {
           <div style="background-color: #EAB9F6" class="jumbotron">
             <div class="container">
               <h1>Contact Information</h1>
-              <p style="font-style: italic;">Please feel free to contact me by phone, email, or old-fashioned mail!</p>
+              <p style="font-style: italic;">Please feel free to contact me by phone or email!</p>
             </div>
           </div>
           <div>
@@ -366,9 +379,6 @@ div.desc {
             </h3>
             <h3>
               Email: bheath015@gmail.com
-            </h3>
-            <h3>
-              Address: 241 S 49th Street, Philadelphia PA, 19139
             </h3>
           </div>
       </div> <!-- /container -->
