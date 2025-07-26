@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -98,6 +97,38 @@ div.desc {
     display: table;
     clear: both;
 }
+
+.card {
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 8px;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    border-radius: 8px 8px 0 0;
+    padding: 16px;
+}
+.card-header img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+.card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4B2E83;
+    font-family: 'Source Sans Pro', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+    /* Optional: add a subtle text-shadow for warmth */
+    text-shadow: 0 1px 2px rgba(200,200,255,0.08);
+}
+.card-body {
+    padding: 16px;
+}
 </style>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -179,55 +210,101 @@ div.desc {
         </div>
 
         <div class="container" style="background-color: lightgray">
-          <!-- Example row of columns -->
           <div class="row">
             <div class="col-md-6">
-              <h2>PolyDroid</h2>
-              <p>Inspired by Google's Building for Billions, an initiative to make mobile appls more accessible to diverse audiences, I am completed a thesis at the University of Pennsylvania proposing a system that uses a probabalistic learning model and active learning to optimize mobile apps for both user experience and resource consumption. Alongside <a href="https://www.linkedin.com/in/neelay-velingker-82745a14b">Neelay Velingker</a>, <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a>, and <a href="https://obastani.github.io/">Professor Osbert Bastani</a>, we developed an effective model for understanding mobile interfaces. I have never had a more rewarding academic experience, and I owe that all to our amazing team. <br><b>Update!</b> I recently found out that I was awarded the 2019 University of Pennsylvania Oustanding Graduate Research Award for PolyDroid! Thank you for your support!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://arxiv.org/abs/1902.09589';"" role="button">PolyDroid &raquo;</a>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/polydroid.png" alt="PolyDroid Icon">
+                  <span class="card-title">PolyDroid</span>
+                </div>
+                <div class="card-body">
+                  <p>Inspired by Google's Building for Billions, an initiative to make mobile appls more accessible to diverse audiences, I am completed a thesis at the University of Pennsylvania proposing a system that uses a probabalistic learning model and active learning to optimize mobile apps for both user experience and resource consumption. Alongside <a href="https://www.linkedin.com/in/neelay-velingker-82745a14b">Neelay Velingker</a>, <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a>, and <a href="https://obastani.github.io/">Professor Osbert Bastani</a>, we developed an effective model for understanding mobile interfaces. I have never had a more rewarding academic experience, and I owe that all to our amazing team. <br><b>Update!</b> I recently found out that I was awarded the 2019 University of Pennsylvania Oustanding Graduate Research Award for PolyDroid! Thank you for your support!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://arxiv.org/abs/1902.09589';" role="button">PolyDroid &raquo;</a>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
-               <h2>Automated Deep Learning for Robotics</h2>
-                <p>I was fortunate to have been given a tremendous opportunity at Tortuga to manage the entire off-robot data stack, including ingestion, engineering, and machine learning. As the subject matter expert in those spaces, I designed an end-to-end microservices backend architecture that generates, validates, and evaluates deep learning models. By leveraging cloud and open source technologies, we have been able to quickly improve the robustness and learning capacity of our models without sacrificing embedded system performance. I am so happy to work with such an amazing group that has given me a great deal of latitude to explore the intersection of CV and agricultural robotics. Below are links to the classes that got me started.</p>
-                <p>
-                  <a class="btn btn-success" href="#" onclick="location.href='http://cs231n.stanford.edu/';"" role="button">Stanford CS231n &raquo;</a>
-                  <img src="icons/tortuga.png" style="width: 30px;">
-                  <a class="btn btn-success" href="#" onclick="location.href='https://alliance.seas.upenn.edu/~cis581/wiki/index.php?title=Lectures';"" role="button" style="background-color: blue; border-color: blue;">Penn CS581 &raquo;</a>
-                </p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/robotics.png" alt="Robotics Icon">
+                  <span class="card-title">Automated Deep Learning for Robotics</span>
+                </div>
+                <div class="card-body">
+                  <p>I was fortunate to have been given a tremendous opportunity at Tortuga to manage the entire off-robot data stack, including ingestion, engineering, and machine learning. As the subject matter expert in those spaces, I designed an end-to-end microservices backend architecture that generates, validates, and evaluates deep learning models. By leveraging cloud and open source technologies, we have been able to quickly improve the robustness and learning capacity of our models without sacrificing embedded system performance. I am so happy to work with such an amazing group that has given me a great deal of latitude to explore the intersection of CV and agricultural robotics. Below are links to the classes that got me started.</p>
+                  <p>
+                    <a class="btn btn-success" href="#" onclick="location.href='http://cs231n.stanford.edu/';" role="button">Stanford CS231n &raquo;</a>
+                    <img src="icons/tortuga.png" style="width: 30px;">
+                    <a class="btn btn-success" href="#" onclick="location.href='https://alliance.seas.upenn.edu/~cis581/wiki/index.php?title=Lectures';" role="button" style="background-color: blue; border-color: blue;">Penn CS581 &raquo;</a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6">
-              <h2>Cell Protein Classification</h2>
-              <p>In 2018-19 when I was heavily researching classical vision and deep learning theory under the incredible mentorship of <a href="https://www.cis.upenn.edu/~jshi/">Professor Jianbo Shi</a>, my friend <a href="https://www.linkedin.com/in/peymannorouzi/">Peyman Norouzi</a> and I tried to find a vision problem that had immediate tangible value. We found the <a href="https://www.kaggle.com/c/human-protein-atlas-image-classification/">Human Protein Atlas Image Classification</a> Kaggle competition, which asked researchers to classify 27 proteins in thousands of images of cells. This problem required a lot of creativity on our end, from writing a custom network, to implementing focal loss, to devising fast original segmentation techniques. I have presented our work in multiple settings over the past year, so to learn more about this work check out my presentation slides below. Or you can view the  network itself on Google Colab.</p>
-              <p>
-              <a class="btn btn-success" href="#" onclick="location.href='https://docs.google.com/presentation/d/18u3nAZde4l6aZ-Ibdr81rUK-tHp3zI4wQQg5bpjlJa8/edit?usp=sharing';"" role="button">Presentation &raquo;</a>
-              <img src="icons/micro.png" style="width: 30px;">
-              <a class="btn btn-success" href="#" onclick="location.href='https://colab.research.google.com/drive/15dq9ALJjXS8gpBbhjymmR0kg_HKiqI-l';"" role="button" style="background-color: blue; border-color: blue;">View Code &raquo;</a>
-              </p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/protein.png" alt="Protein Icon">
+                  <span class="card-title">Cell Protein Classification</span>
+                </div>
+                <div class="card-body">
+                  <p>In 2018-19 when I was heavily researching classical vision and deep learning theory under the incredible mentorship of <a href="https://www.cis.upenn.edu/~jshi/">Professor Jianbo Shi</a>, my friend <a href="https://www.linkedin.com/in/peymannorouzi/">Peyman Norouzi</a> and I tried to find a vision problem that had immediate tangible value. We found the <a href="https://www.kaggle.com/c/human-protein-atlas-image-classification/">Human Protein Atlas Image Classification</a> Kaggle competition, which asked researchers to classify 27 proteins in thousands of images of cells. This problem required a lot of creativity on our end, from writing a custom network, to implementing focal loss, to devising fast original segmentation techniques. I have presented our work in multiple settings over the past year, so to learn more about this work check out my presentation slides below. Or you can view the  network itself on Google Colab.</p>
+                  <p>
+                  <a class="btn btn-success" href="#" onclick="location.href='https://docs.google.com/presentation/d/18u3nAZde4l6aZ-Ibdr81rUK-tHp3zI4wQQg5bpjlJa8/edit?usp=sharing';" role="button">Presentation &raquo;</a>
+                  <img src="icons/micro.png" style="width: 30px;">
+                  <a class="btn btn-success" href="#" onclick="location.href='https://colab.research.google.com/drive/15dq9ALJjXS8gpBbhjymmR0kg_HKiqI-l';" role="button" style="background-color: blue; border-color: blue;">View Code &raquo;</a>
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
-             <h2>Implementing a Data Pipeline</h2>
-              <p>When I arrived at Accolade as a data engineer, the company was transitioning to a new enterprise data warehouse on AWS. Under the guidance of <a href="https://www.linkedin.com/in/matthew-wurst-51063739/">Matt Wurst</a>, the best software manager I have ever worked for, I implemented a scalable pipeline which could collect unstructured data from microservices using SNS/SQS, transform data using Spark on EMR, and upsert the data to the warehouse in Redshift. It was a great opportunity to learn at a fun and energetic company. It meant a lot working on a team that faces the challenges of healthcare head-on and tries to make the industry a more compassionate and economical place. Learn more about them at the link below!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.accolade.com/';"" role="button">Accolade &raquo;</a></p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/pipeline.png" alt="Pipeline Icon">
+                  <span class="card-title">Implementing a Data Pipeline</span>
+                </div>
+                <div class="card-body">
+                  <p>When I arrived at Accolade as a data engineer, the company was transitioning to a new enterprise data warehouse on AWS. Under the guidance of <a href="https://www.linkedin.com/in/matthew-wurst-51063739/">Matt Wurst</a>, the best software manager I have ever worked for, I implemented a scalable pipeline which could collect unstructured data from microservices using SNS/SQS, transform data using Spark on EMR, and upsert the data to the warehouse in Redshift. It was a great opportunity to learn at a fun and energetic company. It meant a lot working on a team that faces the challenges of healthcare head-on and tries to make the industry a more compassionate and economical place. Learn more about them at the link below!</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://www.accolade.com/';" role="button">Accolade &raquo;</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row"></div>
+          <div class="row">
             <div class="col-md-4">
-              <h2>Program Reduction</h2>
-              <p>Before PolyDroid, I worked with a tremendous team under the guidance of <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a> that focuses on debloating large programs. I researched the application of the team's Chisel program on web apps (specifically on the impact of non-determinism related to programs that interact with a server). You can read more about Chisel through the link below.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='http://www.cis.upenn.edu/~mhnaik/papers/chisel.pdf';"" role="button">Chisel &raquo;</a>
-            </p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/chisel.png" alt="Chisel Icon">
+                  <span class="card-title">Program Reduction</span>
+                </div>
+                <div class="card-body">
+                  <p>Before PolyDroid, I worked with a tremendous team under the guidance of <a href="https://www.cis.upenn.edu/~mhnaik/">Professor Mayur Naik</a> that focuses on debloating large programs. I researched the application of the team's Chisel program on web apps (specifically on the impact of non-determinism related to programs that interact with a server). You can read more about Chisel through the link below.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='http://www.cis.upenn.edu/~mhnaik/papers/chisel.pdf';" role="button">Chisel &raquo;</a>
+                </div>
+              </div>
             </div>
             <div class="col-md-4">
-              <h3>CryptoCurrency Trading</h3>
-              <p>A friend and I developed a platform to help users experiment with applying machine learning models to the cryptocurrency market. We hope to familiarize this exciting marketplace with a larger audience!</p>
-              <p>
-                <a class="btn btn-success" href="#" onclick="location.href='https://github.com/halljw/QuantitativeCryptocurrency';"" role="button">View Code &raquo;</a>
-                <img src="images/emblem_dark.png" style="width: 30px;">
-                <a class="btn btn-success" href="#" onclick="location.href='http://www.blockheadexchange.com';"" role="button" style="background-color: blue; border-color: blue;">View Website &raquo;</a>
-              </p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/crypto.png" alt="Crypto Icon">
+                  <span class="card-title">CryptoCurrency Trading</span>
+                </div>
+                <div class="card-body">
+                  <p>A friend and I developed a platform to help users experiment with applying machine learning models to the cryptocurrency market. We hope to familiarize this exciting marketplace with a larger audience!</p>
+                  <p>
+                    <a class="btn btn-success" href="#" onclick="location.href='https://github.com/halljw/QuantitativeCryptocurrency';" role="button">View Code &raquo;</a>
+                    <img src="images/emblem_dark.png" style="width: 30px;">
+                    <a class="btn btn-success" href="#" onclick="location.href='http://www.blockheadexchange.com';" role="button" style="background-color: blue; border-color: blue;">View Website &raquo;</a>
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-md-4">
-              <h3>This Colorful Website!</h3>
-                <p>I had a lot of fun making this website, and I would be happy to help anyone get started making their personal site. Feel free to email me any questions you might have. Also, let me know if you see any ways that I can improve the site, I update it all the time.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Professional-Site';"" role="button">View Code &raquo;</a></p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/site.png" alt="Site Icon">
+                  <span class="card-title">This Colorful Website!</span>
+                </div>
+                <div class="card-body">
+                  <p>I had a lot of fun making this website, and I would be happy to help anyone get started making their personal site. Feel free to email me any questions you might have. Also, let me know if you see any ways that I can improve the site, I update it all the time.</p><p></p><a class="btn btn-success" href="#" onclick="location.href='https://github.com/bheath015/Professional-Site';" role="button">View Code &raquo;</a>
+                </div>
               </div>
             </div>
           </div>
@@ -243,24 +320,43 @@ div.desc {
             <p>If you have the opportunity, please take some time to check out the awesome work of some of the organizations below! Each organization supports a unique cause that means a great deal to their local communities.</p>
           </div>
         </div>
-
         <div class="container">
-          <!-- Example row of columns -->
           <div class="row">
             <div class="col-md-4">
-              <h2>BBBS of Mercer County</h2>
-              <p>My participation with Big Brothers Big Sisters programs provided me with some of the most rewarding experiences of my life. Most recently I worked as a Big Brother in Mercer County. BBBS Mercer provides opportunities for kids from diverse backgrounds in need of a role model, and they have countless success stories. Please take some time to review their recent initiatives.</p>
-              <p><a class="btn btn-info" href="#" onclick="location.href='http://bbbsmercer.org/';"" role="button">Learn More &raquo;</a></p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/bbbs.png" alt="BBBS Icon">
+                  <span class="card-title">BBBS of Mercer County</span>
+                </div>
+                <div class="card-body">
+                  <p>Big Brothers Big Sisters of Mercer County offered some of the most rewarding experiences of my life, allowing me to serve as a Big Brother and provide mentorship to awesome kids.</p>
+                  <p><a class="btn btn-info" href="#" onclick="location.href='http://bbbsmercer.org/';" role="button">Learn More &raquo;</a></p>
+                </div>
+              </div>
             </div>
             <div class="col-md-4">
-              <h2>Minds Matter Philadelphia</h2>
-              <p>Many children in urban public scools crave exposure to Science, Technology, Engineering, and Mathematic academic opportunities, but often don't know where to channel their enthusiasm. Minds Matter aims to change that for teenage students in Philadelphia through mentorship and eduction.</p>
-              <p><a class="btn btn-info" href="#" onclick="location.href='http://mindsmatterphilly.com/';"" role="button">Learn More &raquo;</a></p>
-           </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/mindsmatter.png" alt="Minds Matter Icon">
+                  <span class="card-title">Minds Matter Philadelphia</span>
+                </div>
+                <div class="card-body">
+                  <p>Minds Matter is an incredible organization that fills a critical gap for Philadelphia's urban public school students, connecting them with vital mentorship and academic opportunities in STEM.</p>
+                  <p><a class="btn btn-info" href="#" onclick="location.href='http://mindsmatterphilly.com/';" role="button">Learn More &raquo;</a></p>
+                </div>
+              </div>
+            </div>
             <div class="col-md-4">
-              <h2>Operation Jersey Cares</h2>
-              <p>During our field missions in Korea, my company was often away from our base for weeks at a time. The generous people at Operation Jersey Cares sent multiple care packages to our unit during my two years overseas that provided many essential items and a little bit of home. This great organization supports deployed troops around the world and I was fortunate to see the impact of their mission first hand.  </p>
-              <p><a class="btn btn-info" href="#" onclick="location.href='http://operationjerseycares.org/';"" role="button">Learn More &raquo;</a></p>
+              <div class="card">
+                <div class="card-header">
+                  <img src="icons/ojc.png" alt="Operation Jersey Cares Icon">
+                  <span class="card-title">Operation Jersey Cares</span>
+                </div>
+                <div class="card-body">
+                  <p>Operation Jersey Cares touched my unit during our deployments in Korea by sending care packages that provided essential items and a much-needed taste of home. They have a profound impact on deployed troops.</p>
+                  <p><a class="btn btn-info" href="#" onclick="location.href='http://operationjerseycares.org/';" role="button">Learn More &raquo;</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -278,18 +374,18 @@ div.desc {
         <div class="container" style="vertical-align: middle;">
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/MPColor.jpg">
-                <img src="images/gallery2/MPColor.jpg" alt="Machu Picchu" width="600" height="400">
+              <a target="_blank" href="images/gallery/mpcolor.jpg">
+                <img src="images/gallery/mpcolor.jpg" alt="Machu Picchu" width="600" height="400">
               </a>
-              <div class="desc">This is one of my favorite pictures from Machu Picchu. The last time I went I did not hike the Inca trail, but that is now on the bucket list.</div>
+              <div class="desc">A unique, awe-inspiring view from Machu Picchu.</div>
             </div>
           </div>
 
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/AllSmiles.jpg">
-                <img src="images/gallery2/AllSmiles.jpg" alt="Skydiving Cross Keys" width="600" height="400">
+              <a target="_blank" href="images/gallery/smiles.jpg">
+                <img src="images/gallery/smiles.jpg" alt="Skydiving Cross Keys" width="600" height="400">
               </a>
               <div class="desc">Celebrating a great jump with some great friends.</div>
             </div>
@@ -297,26 +393,26 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery/Reenlistment.JPG">
-                <img src="images/gallery/Reenlistment.JPG" alt="Reenlistment Ceremony" width="600" height="400">
+              <a target="_blank" href="images/gallery/reenlistment.jpg">
+                <img src="images/gallery/reenlistment.jpg" alt="Reenlistment Ceremony" width="600" height="400">
               </a>
-              <div class="desc">Some of my favorite memories in the Army were conducting ceremonies with members of my team.</div>
+              <div class="desc">My first reenlistment ceremony; I got the lines 95% correct.</div>
             </div>
           </div>
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/hockeyteam.jpg">
-                <img src="images/gallery2/hockeyteam.jpg" alt="Duke Hockey" width="600" height="400">
+              <a target="_blank" href="images/gallery/hockey_team.jpg">
+                <img src="images/gallery/hockey_team.jpg" alt="Duke Hockey" width="600" height="400">
               </a>
-              <div class="desc">I was very fortunate to spend three years playing hockey at Duke. Now I play in a league of washed up college athletes like myself.</div>
+              <div class="desc">Our inspiring, but often unsuccessful, Duke Hockey team.</div>
             </div>
           </div>
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/Nice.jpg">
-                <img src="images/gallery2/Nice.jpg" alt="Nice Landscape" width="600" height="400">
+              <a target="_blank" href="images/gallery/nice.jpg">
+                <img src="images/gallery/nice.jpg" alt="Nice Landscape" width="600" height="400">
               </a>
               <div class="desc">The outskirts of Nice have some really gorgeous mountain landsapes!</div>
             </div>
@@ -324,8 +420,8 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/Cartagena.jpg">
-                <img src="images/gallery2/Cartagena.jpg" alt="Cartagena Street" width="600" height="400">
+              <a target="_blank" href="images/gallery/cartagena.jpg">
+                <img src="images/gallery/cartagena.jpg" alt="Cartagena Street" width="600" height="400">
               </a>
               <div class="desc">Cartagena is the most colorful town I've been to. </div>
             </div>
@@ -333,28 +429,55 @@ div.desc {
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/OPORD.jpg">
-                <img src="images/gallery2/OPORD.jpg" alt="OPORD" width="600" height="400">
+              <a target="_blank" href="images/gallery/opord.jpg">
+                <img src="images/gallery/opord.jpg" alt="OPORD" width="600" height="400">
               </a>
-              <div class="desc">Getting the helicoptor's network company ready for a mission in Korea. We all had about four layers on in this picture.</div>
+              <div class="desc">Leading the helicoptor's network company on a cold missing in Korea.</div>
             </div>
           </div>
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/Fuji.jpg">
-                <img src="images/gallery2/Fuji.jpg" alt="Mount Fuji" width="600" height="400">
+              <a target="_blank" href="images/gallery/fuji.jpg">
+                <img src="images/gallery/fuji.jpg" alt="Mount Fuji" width="600" height="400">
               </a>
-              <div class="desc">This was my great friend and I enjoying a snack as we tried to climb Mount Fuji in the offseason. We did not succeed.</div>
+              <div class="desc">My friend and I snacking on Mount Fuji in the cold offseason.</div>
             </div>
           </div>
 
           <div class="responsive">
             <div class="gallery">
-              <a target="_blank" href="images/gallery2/Bali.jpg">
-                <img src="images/gallery2/Bali.jpg" alt="Bali" width="600" height="400">
+              <a target="_blank" href="images/gallery/bali.jpg">
+                <img src="images/gallery/bali.jpg" alt="Bali" width="600" height="400">
               </a>
-              <div class="desc">I visited a stunning Buddhist temple during a surf trip to Bali. Monkeys live in many Balinese temples and steal sunglasses from visitors.</div>
+              <div class="desc">Watching our for thieving monkeys at a Buddhist temple on a Bali surf trip.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/farm.jpeg">
+                <img src="images/gallery/farm.jpeg" alt="OPORD" width="600" height="400">
+              </a>
+              <div class="desc">My fiancée and I at a fun western wedding, with a raccoon bolo tie.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/landing.jpeg">
+                <img src="images/gallery/landing.jpeg" alt="Mount Fuji" width="600" height="400">
+              </a>
+              <div class="desc">A legendary landing in front of stunning Longs Peak.</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/gallery/breck.jpeg">
+                <img src="images/gallery/breck.jpeg" alt="Bali" width="600" height="400">
+              </a>
+              <div class="desc">Beating my friends down the mountain at Steamboat Springs.</div>
             </div>
           </div>
 
